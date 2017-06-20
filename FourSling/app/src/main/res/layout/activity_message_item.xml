@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWhiteness"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_height_sixty_five">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/activity_message_item_http"
+                    android:layout_marginLeft="@dimen/activity_height_twenty"
+                    android:textColor="@color/colorBlackFour"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/activity_message_item_time"
+                    android:layout_marginLeft="@dimen/activity_height_twenty"
+                    android:textSize="@dimen/activity_height_thirteen"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorGrayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:background="@drawable/layout_menu_textveiw_message_background"
+                android:id="@+id/activity_message_item_textview_message"
+                android:textSize="@dimen/activity_height_ten"
+                android:visibility="invisible"
+                android:textColor="@color/colorWhiteness"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_height_twenty"
+                android:layout_width="@dimen/activity_height_ten"
+                android:layout_height="@dimen/activity_height_ten" />
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

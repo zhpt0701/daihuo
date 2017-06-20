@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/activity_height_twenty_one"
+        android:layout_marginRight="@dimen/activity_height_twenty_one"
+        android:background="@drawable/relativelayout_popup_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/popup_setting_textview"
+            android:background="@drawable/popup_setting_textview_back"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/activity_height_seventeen"
+            android:textColor="@color/colorBlackFour"
+            android:gravity="center"
+            android:layout_height="@dimen/activity_height_fifty" />
+        <TextView
+            android:layout_below="@+id/popup_setting_textview"
+            android:id="@+id/popup_setting_textview_content"
+            android:background="@color/colorWhiteness"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:textColor="@color/colorBlackFour"
+            android:gravity="top|center_horizontal"
+            android:layout_height="@dimen/activity_height_fifty" />
+        <LinearLayout
+            android:layout_below="@+id/popup_setting_textview_content"
+            android:id="@+id/activity_security_linear_ID"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhiteness"
+            android:layout_height="@dimen/activity_height_sixty">
+            <TextView
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorBlackFour"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_height_twenty_one"
+                android:text="@string/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/activity_security_input_ID"
+                android:layout_marginLeft="@dimen/activity_height_fifteen"
+                android:hint="@string/input_ID"
+                android:lines="1"
+                android:maxLength="18"
+                android:digits="@string/password"
+                android:textColor="@color/colorBlackFour"
+                android:textColorHint="@color/colorGrayText"
+                android:background="@drawable/edittext_landing_phone_background"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_height_one"
+            android:layout_below="@+id/activity_security_linear_ID"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_height_fifty">
+            <Button
+                android:id="@+id/popup_setting_cancel_btn"
+                android:layout_weight="1"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorBule"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:background="@drawable/popup_setting_btn_left_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/popup_setting_ok_btn"
+                android:layout_marginLeft="@dimen/activity_height_one"
+                android:layout_weight="1"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorBule"
+                android:gravity="center"
+                android:text="@string/register_textview_ok"
+                android:background="@drawable/popup_setting_btn_right_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

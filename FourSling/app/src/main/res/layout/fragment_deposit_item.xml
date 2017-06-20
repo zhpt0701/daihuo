@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorLine"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/fragment_deposit_item_txt_time"
+        android:background="@color/colortimeback"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/activity_height_five"
+        android:paddingRight="@dimen/activity_height_five"
+        android:textSize="@dimen/activity_height_twelve"
+        android:textColor="@color/colorBlackThree"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_height_fifteen"
+        android:paddingLeft="@dimen/activity_number_nine"
+        android:background="@drawable/fragment_roder_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/fragment_deposit_item_txt_tx"
+            android:layout_width="match_parent"
+            android:text="@string/fragment_deposit_zh"
+            android:textColor="@color/colorBlackFour"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:layout_marginLeft="@dimen/activity_number_sixteen"
+            android:layout_marginRight="@dimen/activity_number_sixteen"
+            android:paddingBottom="@dimen/activity_height_ten"
+            android:background="@drawable/fragment_deposit_item_text_title_background"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_deposit_item_txt_money"
+            android:layout_marginTop="@dimen/activity_height_twenty"
+            android:layout_below="@+id/fragment_deposit_item_txt_tx"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorRedTwo"
+            android:textSize="@dimen/activity_height_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_number_thirty"
+            android:id="@+id/fragment_deposit_item_txt_zh"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:textColor="@color/colorBlackFour"
+            android:text="@string/fragment_deposit_zf"
+            android:layout_marginLeft="@dimen/activity_height_twenty_five"
+            android:layout_below="@+id/fragment_deposit_item_txt_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_number_thirty"
+            android:id="@+id/fragment_deposit_item_txt_alipay"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:layout_marginRight="@dimen/activity_height_twenty_five"
+            android:layout_below="@+id/fragment_deposit_item_txt_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_deposit_item_txt_jd"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:textColor="@color/colorBlackFour"
+            android:layout_marginTop="@dimen/activity_number_fourteen"
+            android:text="@string/fragment_deposit_dz"
+            android:layout_marginLeft="@dimen/activity_height_twenty_five"
+            android:layout_below="@+id/fragment_deposit_item_txt_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_deposit_item_txt_cg"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/activity_number_fourteen"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:layout_marginRight="@dimen/activity_height_twenty_five"
+            android:layout_below="@+id/fragment_deposit_item_txt_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/fragment_deposit_item_btn"
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:layout_below="@+id/fragment_deposit_item_txt_cg"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:textColor="@color/colorGrayText"
+            android:text="@string/fragment_deposit_jd"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="@dimen/activity_number_sixteen"
+            android:layout_marginRight="@dimen/activity_number_sixteen"
+            android:paddingRight="@dimen/activity_number_nine"
+            android:layout_marginBottom="@dimen/activity_height_three"
+            android:background="@drawable/fragment_deposit_item_text_background"
+            android:layout_height="@dimen/activity_height_forty_four" />
+    </RelativeLayout>
+</LinearLayout>

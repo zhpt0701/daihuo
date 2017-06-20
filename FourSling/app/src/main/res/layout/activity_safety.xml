@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/activity_safety_btn_up_pass"
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:drawableRight="@mipmap/icon_arrow_common"
+                android:paddingRight="@dimen/activity_height_twenty_one"
+                android:paddingLeft="@dimen/activity_height_twenty_one"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorBlackFour"
+                android:gravity="left|center_vertical"
+                android:text="修改登录密码"
+                android:background="@drawable/fragment_user_enter_btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_fifty_five" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/colorWhiteness"
+                android:layout_height="@dimen/activity_number_fifty_five">
+                <Button
+                    android:id="@+id/activity_safety_btn_up_pay_pass"
+                    android:layout_marginTop="@dimen/activity_height_one"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:gravity="left|center_vertical"
+                    android:text="修改支付密码"
+                    android:background="@drawable/fragment_user_enter_btn_background"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+
+                    android:src="@mipmap/icon_arrow_common"
+                    android:layout_marginRight="@dimen/activity_height_twenty_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorWhiteness"
+                android:layout_height="@dimen/activity_height_sixty">
+                <TextView
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackTwo"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:text="支付密码"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/activity_set_pay_pass_ed"
+                    android:layout_marginLeft="@dimen/activity_height_fifty_nine"
+                    android:hint="@string/register_editText_pass"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="6"
+                    android:password="true"
+                    android:digits="@string/password"
+                    android:textColor="@color/colorBlackFour"
+                    android:textColorHint="@color/colorGrayText"
+                    android:background="@drawable/edittext_landing_phone_background"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorWhiteness"
+                android:layout_height="@dimen/activity_height_sixty">
+                <TextView
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackTwo"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:text="再次输入"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/activity_set_pay_pass_agen_ed"
+                    android:layout_marginLeft="@dimen/activity_height_fifty_nine"
+                    android:hint="@string/register_editText_pass"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="6"
+                    android:password="true"
+                    android:digits="@string/password"
+                    android:textColor="@color/colorBlackFour"
+                    android:textColorHint="@color/colorGrayText"
+                    android:background="@drawable/edittext_landing_phone_background"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/activity_set_pay_pass_btn"
+                android:layout_marginTop="@dimen/activity_height_sixty"
+                android:layout_marginLeft="@dimen/activity_height_fifteen"
+                android:layout_marginRight="@dimen/activity_height_fifteen"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/activity_height_thirteen"
+                android:textColor="@color/colorWhiteness"
+                android:text="@string/register_textview_ok"
+                android:background="@drawable/button_register_background"
+                android:layout_height="@dimen/activity_height_forty_four" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

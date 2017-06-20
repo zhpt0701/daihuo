@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/activity_security_state_linear"
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/colorWhiteness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/activity_security_state_text"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorWhiteness"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_height_twenty"
+                    android:textColor="@color/colorBlackFour"
+                    android:layout_height="@dimen/activity_height_fifty" />
+                <ImageView
+                    android:src="@mipmap/icon_arrow_common"
+                    android:background="@color/colorLucency"
+                    android:layout_marginRight="@dimen/activity_height_twenty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/activity_security_state_linear_id"
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/colorWhiteness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/activity_security_state_text_id"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorWhiteness"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_height_twenty"
+                    android:textColor="@color/colorBlackFour"
+                    android:layout_height="@dimen/activity_height_fifty" />
+                <ImageView
+                    android:src="@mipmap/icon_arrow_common"
+                    android:background="@color/colorLucency"
+                    android:layout_marginRight="@dimen/activity_height_twenty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+
+</LinearLayout>

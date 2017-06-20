@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/bg_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_height_forty">
+                <Button
+                    android:id="@+id/fragment_money_btn_back"
+                    android:paddingLeft="@dimen/activity_height_fifteen"
+                    android:drawableLeft="@mipmap/nav_icon_user_white"
+                    android:background="@color/colorLucency"
+                    android:layout_width="@dimen/slidingmenu_offset"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="@string/fragment_content_money"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorWhiteness"
+                    android:textSize="@dimen/activity_height_seventeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="@dimen/activity_height_forty_one"
+                android:textColor="@color/colorWhiteness"
+                android:layout_width="wrap_content"
+                android:text="@string/fragment_conent_y"
+                android:textSize="@dimen/activity_number_fourteen"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_money_textview"
+                android:layout_marginTop="@dimen/activity_height_twelve"
+                android:textColor="@color/colorWhiteness"
+                android:textSize="@dimen/activity_number_thirty_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_number_forty_nine"
+                android:background="@drawable/fragment_money_relativelayout_background"
+                android:layout_marginLeft="@dimen/activity_number_six"
+                android:layout_marginRight="@dimen/activity_number_six"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fragment_money_textview_z"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/fragment_money_height_line"
+                    android:layout_width="@dimen/activity_height_one"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/fragment_money_textview_y"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/layout_menu_line_backgroud"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_height_one" />
+                <Button
+                    android:id="@+id/fragment_money_btn_cz"
+                    android:drawableTop="@mipmap/wallet_icon_topup"
+                    android:layout_marginBottom="@dimen/activity_height_forty"
+                    android:textColor="@color/colorBlackFour"
+                    android:text="充值"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_marginRight="@dimen/activity_height_sixty"
+                    android:drawablePadding="@dimen/activity_number_eight"
+                    android:layout_toLeftOf="@+id/fragment_money_textview_z"
+                    android:layout_above="@+id/fragment_money_textview_y"
+                    android:background="@color/colorLucency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_above="@+id/fragment_money_textview_y"
+                    android:layout_marginBottom="@dimen/activity_height_forty"
+                    android:layout_marginLeft="@dimen/activity_height_sixty"
+                    android:background="@color/colorLucency"
+                    android:drawableTop="@mipmap/wallet_icon_withdraw"
+                    android:drawablePadding="@dimen/activity_number_eight"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:text="提现"
+                    android:layout_toRightOf="@+id/fragment_money_textview_z"
+                    android:id="@+id/fragment_money_btn_deposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_marginTop="@dimen/activity_height_forty"
+                    android:layout_below="@+id/fragment_money_textview_y"
+                    android:layout_toLeftOf="@+id/fragment_money_textview_z"
+                    android:layout_marginRight="@dimen/activity_height_sixty"
+                    android:background="@color/colorLucency"
+                    android:drawableTop="@mipmap/wallet_icon_income"
+                    android:drawablePadding="@dimen/activity_number_eight"
+                    android:textColor="@color/colorBlackFour"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:text="今日收入"
+                    android:id="@+id/fragment_money_btn_zs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_marginTop="@dimen/activity_height_forty"
+                    android:layout_below="@+id/fragment_money_textview_y"
+                    android:layout_toRightOf="@+id/fragment_money_textview_z"
+                    android:background="@color/colorLucency"
+                    android:drawableTop="@mipmap/wallet_icon_pay"
+                    android:drawablePadding="@dimen/activity_number_eight"
+                    android:layout_marginLeft="@dimen/activity_height_sixty"
+                    android:id="@+id/fragment_money_btn_zc"
+                    android:textColor="@color/colorBlackFour"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:text="今日支出"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_below="@+id/fragment_money_btn_zc"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/fragment_money_text_sr"
+                        android:textColor="@color/colorRedTwo"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/fragment_money_text_zc"
+                        android:layout_below="@+id/fragment_money_btn_zc"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/colorRedTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:id="@+id/activity_deposit_wx"
+                android:visibility="gone"
+                android:background="@color/colorWhiteness"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_seventy">
+                <ImageView
+                    android:id="@+id/activity_deposit_image_wx"
+                    android:layout_marginLeft="@dimen/activity_height_fifteen"
+                    android:src="@mipmap/wallet_logo_weixin"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_toRightOf="@+id/activity_deposit_image_wx"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="@dimen/activity_height_five"
+                        android:text="@string/activity_pay_wx_tx"
+                        android:textColor="@color/colorBlackFour"
+                        android:textSize="@dimen/activity_number_sixteen"
+                        android:layout_marginLeft="@dimen/activity_height_fifteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/activity_deposit_text_wx"
+                        android:textColor="@color/colorGrayText"
+                        android:layout_marginTop="@dimen/activity_height_five"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:layout_marginLeft="@dimen/activity_height_fifteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/activity_deposit_imageview_wx"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_height_fifteen"
+                    android:src="@drawable/activity_deposit_imageview_src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:id="@+id/activity_deposit_alipay"
+                android:background="@color/colorWhiteness"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_seventy">
+                <ImageView
+                    android:id="@+id/activity_deposit_image_alipay"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_height_fifteen"
+                    android:src="@mipmap/wallet_logo_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_toRightOf="@+id/activity_deposit_image_alipay"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="@dimen/activity_height_five"
+                        android:text="@string/activity_pay_alipay_tx"
+                        android:textColor="@color/colorBlackFour"
+                        android:textSize="@dimen/activity_number_sixteen"
+                        android:layout_marginLeft="@dimen/activity_height_fifteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/activity_deposit_text_alipay"
+                        android:textColor="@color/colorGrayText"
+                        android:layout_marginTop="@dimen/activity_height_five"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:layout_marginLeft="@dimen/activity_height_fifteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/activity_deposit_imageview_alipay"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_height_fifteen"
+                    android:src="@drawable/activity_deposit_imageview_src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:background="@color/colorWhiteness"
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="@dimen/activity_number_eighty_three">
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_number_fifty_five">
+                    <TextView
+                        android:id="@+id/activity_deposit_textview"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activity_pay_textview_tx"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:textColor="@color/colorBlackFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/activity_deposit_ed_input"
+                        android:layout_marginLeft="@dimen/activity_height_fifteen"
+                        android:layout_marginRight="@dimen/activity_height_twenty_one"
+                        android:layout_toRightOf="@+id/activity_deposit_textview"
+                        android:textColor="@color/colorBlackFour"
+                        android:textSize="@dimen/activity_number_sixteen"
+                        android:textColorHint="@color/colorGrayText"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/activity_pay_ed_cotent_tx"
+                        android:background="@color/colorLucency"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/activity_deposit_textview_money"
+                    android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorGrayText"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/activity_height_twelve"
+                    android:layout_height="@dimen/activity_height_twenty_eight" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="@dimen/activity_height_twelve"
+                android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                android:textColor="@color/colorGrayText"
+                android:text="@string/activity_pay_textview_max"
+                android:textSize="@dimen/activity_height_twelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                android:textColor="@color/colorGrayText"
+                android:text="@string/activity_pay_textview_min"
+                android:textSize="@dimen/activity_height_twelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activity_pay_btn_deposit"
+                android:layout_marginTop="@dimen/activity_number_thirty"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="提现"
+                android:textColor="@color/activity_pay_btn_color"
+                android:layout_marginLeft="@dimen/activity_height_fifteen"
+                android:layout_marginRight="@dimen/activity_height_fifteen"
+                android:background="@drawable/activity_pay_btn_background"
+                android:layout_height="@dimen/activity_height_fifty" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/activity_height_twenty"
+        android:layout_marginRight="@dimen/activity_height_twenty"
+        android:background="@drawable/relativelayout_background"
+        android:paddingBottom="@dimen/activity_height_twenty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:id="@+id/popup_deposit_linearlayout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_height_fifty">
+
+            <TextView
+                android:id="@+id/popup_deposit_text"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:text="输入支付密码"
+                android:gravity="center"
+                android:background="@color/colorLucency"
+                android:textColor="@color/colorBlackFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:layout_below="@+id/popup_deposit_linearlayout"
+            android:id="@+id/popup_deposit_edit"
+            android:layout_width="match_parent"
+            android:hint="输入支付密码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:password="true"
+            android:background="@drawable/edittext_popup_deposit_background"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:paddingLeft="@dimen/activity_height_ten"
+            android:textColorHint="@color/colorGrayText"
+            android:textColor="@color/colorBlackFour"
+            android:layout_marginRight="@dimen/activity_height_fifteen"
+            android:layout_marginLeft="@dimen/activity_height_fifteen"
+            android:layout_height="@dimen/activity_height_fifty" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_height_twenty"
+            android:layout_below="@+id/popup_deposit_edit"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/popup_deposit_cancel"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorRedTwo"
+                android:text="@string/cancel"
+                android:background="@color/colorLucency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@color/colorGrayTexttwo"
+                android:layout_width="@dimen/activity_height_one"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/popup_deposit_btn_ok"
+                android:layout_weight="1"
+                android:layout_below="@+id/popup_deposit_edit"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorRedTwo"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:text="@string/register_textview_ok"
+                android:gravity="center"
+                android:background="@color/colorLucency"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

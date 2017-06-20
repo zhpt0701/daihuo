@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/popup_user_btn_car_human_light"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="轻型客车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_human_middle_sized"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="中型客车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_human_weight"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="重型客车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_small"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="微型货车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_light"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="轻型货车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_middle_sized"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="中型货车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_weight"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="重型货车"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_user_btn_car_moudel_cancel"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/colorRedTwo"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+</LinearLayout>

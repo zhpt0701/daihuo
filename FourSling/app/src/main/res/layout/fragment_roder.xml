@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhiteness"
+        android:layout_height="@dimen/activity_height_forty">
+        <Button
+            android:id="@+id/fragment_roder_btn_menu"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/nav_icon_user"
+            android:gravity="center"
+            android:background="@color/colorLucency"
+            android:paddingLeft="@dimen/activity_number_twenty_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_weight="9"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/nav_icon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/fragment_roder_btn_location"
+                android:textColor="@color/colorBlackTwo"
+                android:text="@string/fragment_roder_loaction"
+                android:layout_marginLeft="@dimen/activity_height_five"
+                android:background="@color/colorLucency"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/activity_height_seventeen"
+                android:layout_width="@dimen/activity_height_fifty_three"
+                android:layout_height="match_parent" />
+            <ProgressBar
+                android:id="@+id/fragment_roder_loading"
+                android:background="@color/colorLucency"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_width="@dimen/activity_height_twenty"
+                android:layout_height="@dimen/activity_height_twenty" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/fragment_roder_btn_search"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableRight="@mipmap/nav_icon_search"
+            android:paddingRight="@dimen/activity_number_thirty_two"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.xl.foursling.view.xlist.XListView
+            android:layout_marginTop="@dimen/activity_number_nine"
+            android:layout_marginLeft="@dimen/activity_height_ten"
+            android:layout_marginRight="@dimen/activity_height_ten"
+            android:id="@+id/fragment_roder_xlistview"
+            android:layout_width="match_parent"
+            android:dividerHeight="@dimen/activity_number_nine"
+            android:visibility="gone"
+            android:listSelector="@color/colorLucency"
+            android:divider="@color/colorLine"
+            android:layout_height="match_parent">
+        </com.example.xl.foursling.view.xlist.XListView>
+       <include layout="@layout/not_data_layout"/>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

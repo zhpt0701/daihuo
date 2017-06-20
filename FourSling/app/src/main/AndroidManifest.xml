@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xl.foursling">
+    <permission
+        android:name="com.example.xl.foursling.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.example.xl.foursling.permission.ACCESS_FINE_LOCATION"
+        android:protectionLevel="normal" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.example.xl.foursling.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="com.example.xl.foursling.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- Optional for location -->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!--用于写入缓存数据到扩展存储卡-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="ANDROID.PERMISSION.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.vibrate"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:name=".MyApplication"
+        android:icon="@mipmap/ic_foursling"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartAppTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登陆-->
+        <activity android:name=".activityes.LandingActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/LandingAppTheme"
+            />
+        <!--注册-->
+        <activity android:name=".activityes.RegisterActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/RegisterAppTheme"
+            />
+        <!--修改密码-->
+        <activity android:name=".activityes.LandingPassActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/RegisterAppTheme"
+        />
+        <activity android:name=".BaseActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <!--协议-->
+        <activity android:name=".activityes.AgreementActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--地址搜索-->
+        <activity android:name=".activityes.SeachAddressActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--地址搜索结果-->
+        <activity android:name=".activityes.roder.SeachRoderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--个人中心添加车辆-->
+        <activity android:name=".activityes.users.CarNewsActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--个人中心车辆-->
+        <activity android:name=".activityes.users.UserCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--个人中心信息审核-->
+        <activity android:name=".activityes.users.UserAptitudeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--钱包消息-->
+        <activity android:name=".activityes.mesages.MoneyMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--接单消息-->
+        <activity android:name=".activityes.mesages.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--计算规则-->
+        <activity android:name=".activityes.mesages.RuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--通知消息-->
+        <activity android:name=".activityes.mesages.MessageActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--提现进度-->
+        <activity android:name=".activityes.mesages.PlanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--安全中心-->
+        <activity android:name=".activityes.settting.SafetyActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--安全中心修改密码-->
+        <activity android:name=".activityes.settting.UpdateActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--设置支付密码-->
+        <activity android:name=".activityes.settting.SetPayPassActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--修改支付密码-->
+        <activity android:name=".activityes.settting.UpdatePayPassActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--设置密保状态-->
+        <activity android:name=".activityes.settting.SecurityStateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--设置密保-->
+        <activity android:name=".activityes.settting.SecurityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+        <!--充值-->
+        <activity android:name=".activityes.money.PayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+        </activity>
+        <!--明细-->
+        <activity android:name=".activityes.money.DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--提现-->
+        <activity android:name=".activityes.money.DepositActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--关于-->
+        <activity android:name=".activityes.settting.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--关于-->
+        <activity android:name=".activityes.settting.FunctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--关于-->
+        <activity android:name=".activityes.settting.TicklingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--收入支出-->
+        <activity android:name=".activityes.money.IncomeAndExpendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--充值提现明细-->
+        <activity android:name=".activityes.money.RechargeAndDepositActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!--微信-->
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--正式上线模式-->
+                <!--<data android:scheme="wx4a2c512e4fa18486"/>-->
+                <!--debug模式-->
+                <data android:scheme="wxf924dba7cb4388c5"/>
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.example.xl.foursling" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+
+        <!--自定义广播接收器-->
+        <receiver android:name=".broadcast.MyReceiver"
+            android:enabled="true"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.example.xl.foursling" />
+            </intent-filter>
+        </receiver>
+        <!--服务-->
+        <service android:name=".service.CityService"/>
+        <service android:name=".service.MdieService"/>
+        <!--路径规划-->
+        <activity
+            android:name=".activityes.map.SingleRouteCalculateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity android:name=".activityes.map.BaseMapActivity"/>
+        <!--实时导航-->
+        <activity android:name=".activityes.map.GPSNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            />
+        <!--2d路径规划-->
+        <activity
+            android:name=".activityes.map.DriveRouteActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!--实景导航-->
+        <activity android:name=".activityes.map.HudDisplayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            />
+        <!--模拟导航-->
+        <activity
+            android:name=".activityes.map.EmulatorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!--导航-->
+        <!--高德定位服务-->
+        <service android:name="com.amap.api.location.APSService"></service>
+        <!--高德key-->
+        <!--<meta-data-->
+            <!--android:name="com.amap.api.v2.apikey"-->
+            <!--android:value="95b010fca7f8737a2204ab75eb8ee489"-->
+            <!--/>-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="9bd799407251aee85d4ef9f56ba7b265"
+            />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+</manifest>

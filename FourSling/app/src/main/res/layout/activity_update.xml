@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/layout_title"/>
+            <include layout="@layout/update_pay_pass_two"/>
+            <LinearLayout
+                android:id="@+id/activity_update_pass"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/activity_height_ten"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_number_fifty_five">
+                    <TextView
+                        android:id="@+id/activity_update_textview_old"
+                        android:textColor="@color/colorBlackFour"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activity_update_textview_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_toRightOf="@+id/activity_update_textview_old"
+                        android:layout_marginLeft="@dimen/activity_height_sixty"
+                        android:id="@+id/activity_update_ed_old"
+                        android:digits="@string/password"
+                        android:singleLine="true"
+                        android:maxLength="18"
+                        android:password="true"
+                        android:textColorHint="@color/colorGrayText"
+                        android:hint="@string/register_editText_pass"
+                        android:background="@drawable/edittext_landing_pass_background"
+                        android:layout_marginRight="@dimen/activity_height_twenty_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/activity_height_one"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_number_fifty_five">
+                    <TextView
+                        android:id="@+id/activity_update_textView_new"
+                        android:textColor="@color/colorBlackFour"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activity_update_textview_new_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_toRightOf="@+id/activity_update_textView_new"
+                        android:layout_marginLeft="@dimen/activity_height_sixty"
+                        android:id="@+id/activity_update_ed_new"
+                        android:digits="@string/password"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorGrayText"
+                        android:hint="@string/lasing_new_paee_editText"
+                        android:maxLength="18"
+                        android:password="true"
+                        android:background="@drawable/edittext_landing_pass_background"
+                        android:layout_marginRight="@dimen/activity_height_twenty_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/activity_height_one"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_number_fifty_five">
+                    <TextView
+                        android:id="@+id/activity_update_textview_ok_new"
+                        android:textColor="@color/colorBlackFour"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activity_update_textview_ok_new_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_toRightOf="@+id/activity_update_textview_ok_new"
+                        android:layout_marginLeft="@dimen/activity_number_thirty"
+                        android:id="@+id/activity_update_ed_ok_new"
+                        android:digits="@string/password"
+                        android:singleLine="true"
+                        android:maxLength="18"
+                        android:hint="@string/lasing_new_paee_editText"
+                        android:password="true"
+                        android:background="@drawable/edittext_landing_pass_background"
+                        android:textColorHint="@color/colorGrayText"
+                        android:layout_marginRight="@dimen/activity_height_twenty_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/activity_update_btn_ok"
+                android:layout_marginTop="@dimen/activity_height_fifty"
+                android:layout_width="match_parent"
+                android:background="@drawable/activity_update_btn_background"
+                android:gravity="center"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorWhiteness"
+                android:text="@string/register_textview_ok"
+                android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                android:layout_marginRight="@dimen/activity_height_twenty_one"
+                android:layout_height="@dimen/activity_height_forty_four" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

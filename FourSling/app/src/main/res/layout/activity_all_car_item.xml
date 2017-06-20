@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorWhiteness"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/activity_all_car_item_imageview"
+            android:background="@color/colorLucency"
+            android:layout_width="@dimen/activity_number_one_hundred_twenty_nine"
+            android:layout_height="@dimen/activity_number_one_hundred_twenty_nine" />
+        <TextView
+            android:id="@+id/activity_all_car_item_sh"
+            android:visibility="gone"
+            android:background="@color/imagecolor_loading"
+            android:textColor="@color/colorWhiteness"
+            android:gravity="center"
+            android:textSize="@dimen/activity_height_twenty"
+            android:layout_width="@dimen/activity_number_one_hundred_twenty_nine"
+            android:layout_height="@dimen/activity_number_one_hundred_twenty_nine" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:id="@+id/activity_all_car_item_car_name"
+            android:textSize="@dimen/activity_number_fourteen"
+            android:textColor="@color/setting_radiobutton_text_select"
+            android:layout_marginLeft="@dimen/activity_height_twenty_five"
+            android:layout_toRightOf="@+id/activity_all_car_item_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/activity_all_car_item_cp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/activity_height_twenty"
+            android:layout_marginLeft="@dimen/activity_height_twenty_five"
+            android:layout_toRightOf="@+id/activity_all_car_item_imageview"
+            android:layout_below="@+id/activity_all_car_item_car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/activity_all_car_item_image_cp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/activity_all_car_item_imageview_background"
+                android:background="@color/colorLucency"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/activity_all_car_item_textview_cp"
+                android:textSize="@dimen/activity_height_twelve"
+                android:textColor="@color/setting_radiobutton_text_select"
+                android:layout_marginLeft="@dimen/activity_height_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_all_car_item_cx"
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/activity_all_car_item_imageview"
+            android:layout_below="@+id/activity_all_car_item_cp"
+            android:layout_marginLeft="@dimen/activity_height_twenty_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/activity_all_car_item_image_cx"
+                android:layout_width="wrap_content"
+                android:src="@drawable/activity_all_car_item_imageview_cx_background"
+                android:background="@color/colorLucency"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/activity_all_car_item_textview_cx"
+                android:textSize="@dimen/activity_height_twelve"
+                android:textColor="@color/setting_radiobutton_text_select"
+                android:layout_marginLeft="@dimen/activity_height_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_all_car_item_cz"
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_height_twenty_five"
+            android:layout_toRightOf="@+id/activity_all_car_item_imageview"
+            android:layout_below="@+id/activity_all_car_item_cx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/activity_all_car_item_image_cz"
+                android:background="@color/colorLucency"
+                android:src="@drawable/activity_all_car_item_imageview_cz_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/activity_all_car_item_textview_cz"
+                android:textSize="@dimen/activity_height_twelve"
+                android:textColor="@color/setting_radiobutton_text_select"
+                android:layout_marginLeft="@dimen/activity_height_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/activity_all_car_item_btn_select"
+            android:background="@drawable/activity_all_car_item_btn_background"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_height_twenty_one"
+            android:layout_width="@dimen/activity_number_thirty"
+            android:layout_height="@dimen/activity_number_thirty" />
+    </RelativeLayout>
+</LinearLayout>

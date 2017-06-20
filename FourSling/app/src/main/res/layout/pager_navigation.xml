@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/pager_navigation_btn"
+        android:layout_width="@dimen/activity_number_one_hundred_forty_four"
+        android:layout_height="@dimen/activity_height_forty"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/pager_navigation_background"
+        android:layout_marginBottom="@dimen/footer_height"
+        android:textColor="@color/colorRedTwo"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textSize="@dimen/activity_height_eighteen"
+        android:text="@string/start" />
+</RelativeLayout>

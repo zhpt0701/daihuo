@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+
+            <corners android:radius="@dimen/activity_height_three"/>
+            <solid android:color="@color/colorborder"/>
+        </shape>
+    </item>
+    <item android:width="@dimen/activity_height_one"
+        android:top="@dimen/activity_height_one"
+        android:bottom="@dimen/activity_height_one"
+        android:left="@dimen/activity_height_one"
+        android:right="@dimen/activity_height_one">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/activity_height_three"/>
+            <solid android:color="@color/colorWhiteness"/>
+            <stroke android:color="#eeeeee"
+                android:width="@dimen/activity_height_one"/>
+        </shape>
+    </item>
+</layer-list>

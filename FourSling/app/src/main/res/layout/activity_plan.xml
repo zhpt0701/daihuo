@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_height_five"
+            android:background="@color/colorWhiteness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_number_two_hundred_thirty_seven">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/activity_plan_select"
+                android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/activity_plan_image_sq"
+                    android:background="@color/colorLucency"
+                    android:src="@drawable/activity_deposit_imageview_src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/activity_plan_text_sq"
+                    android:background="@drawable/activty_plan_textview_background"
+                    android:layout_width="@dimen/activity_height_one"
+                    android:layout_height="@dimen/activity_height_sixty_five" />
+                <ImageView
+                    android:id="@+id/activity_plan_image_sh"
+                    android:background="@color/colorLucency"
+                    android:src="@drawable/activity_deposit_imageview_src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/activity_plan_text_sh"
+                    android:background="@drawable/activty_plan_textview_background"
+                    android:layout_width="@dimen/activity_height_one"
+                    android:layout_height="@dimen/activity_height_sixty_five" />
+                <ImageView
+                    android:id="@+id/activity_plan_image_tx"
+                    android:background="@color/colorLucency"
+                    android:src="@drawable/activity_deposit_imageview_src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_toRightOf="@+id/activity_plan_select"
+                android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/activity_plan_text_color_sq"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:text="交易申请成功"
+                        android:textColor="@color/setting_radiobutton_text_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/activity_plan_text_color_sq_time"
+                        android:textSize="@dimen/activity_height_twelve"
+                        android:textColor="@color/colorBlackTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/activity_plan_text_color_sh"
+                        android:text="审核成功"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:textColor="@color/setting_radiobutton_text_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/activity_plan_text_color_sh_time"
+                        android:textSize="@dimen/activity_height_twelve"
+                        android:textColor="@color/colorBlackTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/activity_plan_text_color_tx"
+                        android:text="提现成功"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:textColor="@color/setting_radiobutton_text_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/activity_plan_text_color_tx_time"
+                        android:textSize="@dimen/activity_height_twelve"
+                        android:textColor="@color/colorBlackTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+
+</LinearLayout>

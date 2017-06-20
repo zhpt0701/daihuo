@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/activity_car_news_linearlayout"
+        android:background="@color/colorWhiteness"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_height_forty">
+        <Button
+            android:id="@+id/fragment_setting_menu"
+            android:background="@null"
+            android:drawableLeft="@mipmap/nav_icon_user"
+            android:paddingLeft="@dimen/activity_height_fifteen"
+            android:layout_width="@dimen/slidingmenu_offset"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="@string/layout_menu_setting"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlackFour"
+            android:gravity="center"
+            android:textSize="@dimen/activity_height_eighteen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/fragment_setting_btn_safety"
+                android:textColor="@color/colorBlackFour"
+                android:gravity="left|center_vertical"
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:text="@string/fragment_setting_textview_safety"
+                android:paddingLeft="@dimen/activity_height_twenty_one"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:drawableRight="@mipmap/icon_arrow_common"
+                android:paddingRight="@dimen/activity_height_twenty_one"
+                android:background="@drawable/fragment_user_enter_btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_fifty_five" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:background="@color/colorWhiteness"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_fifty_five">
+                <TextView
+                    android:id="@+id/fragment_setting_textview_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlackFour"
+                    android:text="@string/fragment_setting_textview_warning"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/fragment_setting_btn_warning"
+                    android:layout_toRightOf="@+id/fragment_setting_textview_warning"
+                    android:background="@color/colorLucency"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorGrayText"
+                    android:text="已关闭"
+                    android:gravity="right|center_vertical"
+                    android:drawablePadding="@dimen/activity_height_ten"
+                    android:paddingRight="@dimen/activity_height_twenty_one"
+                    android:drawableRight="@mipmap/icon_arrow_common"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:background="@color/colorWhiteness"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_fifty_five">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlackFour"
+                    android:text="@string/fragment_setting_textview_shake"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:id="@+id/fragment_radiogroup_on_off"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/activity_height_three"
+                    android:background="@drawable/fragment_radiogroup_back"
+                    android:layout_marginRight="@dimen/activity_height_twenty_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_height_forty">
+                    <RadioButton
+                        android:id="@+id/fragment_setting_radiobutton_on"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/fragment_setting_radaiobutton_on_back"
+                        android:layout_width="@dimen/activity_height_forty"
+                        android:layout_height="match_parent" />
+                    <RadioButton
+                        android:id="@+id/fragment_setting_radiobutton_off"
+                        android:button="@null"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/fragment_setting_radiobutton_off_back"
+                        android:layout_width="@dimen/activity_height_forty"
+                        android:layout_height="match_parent" />
+                </RadioGroup>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/fragment_setting_btn_about"
+                android:textColor="@color/colorBlackFour"
+                android:gravity="left|center_vertical"
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:text="@string/about"
+                android:paddingLeft="@dimen/activity_height_twenty_one"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:drawableRight="@mipmap/icon_arrow_common"
+                android:paddingRight="@dimen/activity_height_twenty_one"
+                android:background="@drawable/fragment_user_enter_btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_number_fifty_five" />
+            <Button
+                android:id="@+id/fragment_setting_btn_out"
+                android:layout_marginTop="@dimen/activity_number_eighty_three"
+                android:background="@drawable/fragment_user_enter_btn_background"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorBlackFour"
+                android:text="@string/fragment_setting_out_btn_content"
+                android:layout_height="@dimen/activity_number_fifty_five" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

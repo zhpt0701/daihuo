@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/activity_roder_item_times"
+        android:background="@color/colortimeback"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/activity_height_five"
+        android:paddingRight="@dimen/activity_height_five"
+        android:textSize="@dimen/activity_height_twelve"
+        android:textColor="@color/colorBlackThree"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_height_fifteen"
+        android:background="@drawable/fragment_roder_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/activity_height_fifteen"
+            android:id="@+id/activity_roder_item_text"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_number_sixteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:id="@+id/activity_roder_item_text_roder"
+            android:layout_below="@+id/activity_roder_item_text"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGrayTexttwo"
+            android:textSize="@dimen/activity_number_fourteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_number_fourteen"
+            android:id="@+id/activity_roder_item_text_line"
+            android:layout_marginLeft="@dimen/activity_number_thirty"
+            android:layout_marginRight="@dimen/activity_number_thirty"
+            android:layout_below="@+id/activity_roder_item_text_roder"
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="@dimen/activity_height_one" />
+        <RelativeLayout
+            android:layout_below="@+id/activity_roder_item_text_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/activity_height_three"
+            android:layout_marginRight="@dimen/activity_height_three"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/activity_number_seventy_one">
+            <TextView
+                android:id="@+id/order_activity_text_start"
+                android:layout_toLeftOf="@+id/roder_activity_orientation"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_height_twenty"
+                android:textColor="@color/colorBlackFour"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/order_activity_text_start_con"
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:layout_below="@+id/order_activity_text_start"
+                android:layout_toLeftOf="@+id/roder_activity_orientation"
+                android:layout_marginLeft="@dimen/activity_height_twenty"
+                android:textColor="@color/colorGrayTexttwo"
+                android:textSize="@dimen/activity_height_twelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/roder_activity_orientation"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorLucency"
+                android:src="@mipmap/order_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/order_activity_text_end"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorBlackFour"
+                android:layout_marginLeft="@dimen/activity_height_twenty"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:layout_toRightOf="@+id/roder_activity_orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:id="@+id/order_activity_text_end_con"
+                android:layout_below="@+id/order_activity_text_end"
+                android:textColor="@color/colorGrayTexttwo"
+                android:layout_marginRight="@dimen/activity_height_twenty"
+                android:textSize="@dimen/activity_height_twelve"
+                android:layout_toRightOf="@+id/roder_activity_orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

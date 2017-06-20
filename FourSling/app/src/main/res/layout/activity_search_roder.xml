@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.xl.foursling.view.xlist.XListView
+            android:layout_marginTop="@dimen/activity_number_nine"
+            android:layout_marginLeft="@dimen/activity_height_ten"
+            android:layout_marginRight="@dimen/activity_height_ten"
+            android:id="@+id/activity_search_roder_xlist"
+            android:layout_width="match_parent"
+            android:dividerHeight="@dimen/activity_number_nine"
+            android:divider="@color/colorLine"
+            android:layout_height="match_parent">
+        </com.example.xl.foursling.view.xlist.XListView>
+        <include layout="@layout/not_data_layout"/>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

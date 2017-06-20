@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorWhiteness"
+        android:layout_height="@dimen/activity_height_twenty" />
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorWhiteness"
+                android:layout_height="@dimen/activity_height_sixty">
+                <TextView
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackTwo"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:text="@string/register_textview_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/editText_lading_pass_phone"
+                    android:layout_marginLeft="@dimen/activity_height_fifty_nine"
+                    android:hint="@string/register_editText_phone"
+                    android:phoneNumber="true"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:textColor="@color/colorBlackFour"
+                    android:textColorHint="@color/colorGrayText"
+                    android:background="@drawable/edittext_landing_phone_background"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/activity_height_twelve"
+                android:background="@color/colorLine"
+                android:layout_height="@dimen/activity_height_one" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorWhiteness"
+                android:layout_height="@dimen/activity_height_sixty">
+
+                <TextView
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackTwo"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:text="@string/register_textview_auth_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/editText_lading_pass_auth_code"
+                    android:layout_marginLeft="@dimen/activity_height_fifty_nine"
+                    android:hint="@string/register_edittext_auth_code"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="6"
+                    android:background="@drawable/edittext_landing_phone_background"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlackFour"
+                    android:textColorHint="@color/colorGrayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="@dimen/activity_height_one"
+                    android:layout_marginTop="@dimen/activity_height_ten"
+                    android:layout_marginBottom="@dimen/activity_height_ten"
+                    android:background="@color/colorLine"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/btn_lading_pass_auth_code"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:paddingRight="@dimen/activity_height_twenty_one"
+                    android:textColor="@color/colorRedTwo"
+                    android:text="@string/register_button_auth_code"
+                    android:textSize="@dimen/activity_height_thirteen"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorLucency"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/activity_height_twelve"
+                android:background="@color/colorLine"
+                android:layout_height="@dimen/activity_height_one" />
+            <LinearLayout
+                android:id="@+id/activity_lading_pass"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_height_sixty">
+                    <TextView
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:textColor="@color/colorBlackTwo"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:text="新密码"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/editText_lading_pass_pass"
+                        android:layout_marginLeft="@dimen/activity_height_fifty_nine"
+                        android:hint="@string/lasing_new_paee_editText"
+                        android:password="true"
+                        android:lines="1"
+                        android:maxLength="18"
+                        android:textColor="@color/colorBlackFour"
+                        android:textColorHint="@color/colorGrayText"
+                        android:digits="@string/password"
+                        android:background="@drawable/edittext_landing_phone_background"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/activity_height_twelve"
+                    android:background="@color/colorLine"
+                    android:layout_height="@dimen/activity_height_one" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_height_sixty">
+                    <TextView
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:textColor="@color/colorBlackTwo"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:text="确认新密码    "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/editText_ok_lading_pass_pass"
+                        android:paddingLeft="@dimen/activity_height_fifteen"
+                        android:hint="@string/lasing_new_paee_editText"
+                        android:password="true"
+                        android:lines="1"
+                        android:maxLength="18"
+                        android:textColor="@color/colorBlackFour"
+                        android:textColorHint="@color/colorGrayText"
+                        android:digits="@string/password"
+                        android:background="@drawable/edittext_landing_phone_background"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/activity_lading_pay_pass"/>
+            <Button
+                android:id="@+id/btn_lading_pass"
+                android:layout_marginTop="@dimen/activity_height_sixty"
+                android:layout_marginLeft="@dimen/activity_height_fifteen"
+                android:layout_marginRight="@dimen/activity_height_fifteen"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/activity_height_thirteen"
+                android:textColor="@color/colorWhiteness"
+                android:text="@string/register_textview_ok"
+                android:background="@drawable/button_register_background"
+                android:layout_height="@dimen/activity_height_forty_four" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

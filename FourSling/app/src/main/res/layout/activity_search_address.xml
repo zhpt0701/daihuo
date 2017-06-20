@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <LinearLayout
+        android:background="@color/colorWhiteness"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_number_one_hundred_twenty">
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/activity_search_address_linearlayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_height_sixty">
+                <ImageView
+                    android:id="@+id/activity_search_address_image_start"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/search_icon_start"
+                    android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/activity_search_address_edit_start"
+                    android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                    android:background="@color/colorLucency"
+                    android:textColorHint="@color/colorGrayText"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:hint="@string/start_ol"
+                    android:textColor="@color/colorBlackFour"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/activity_search_address_image_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_height_sixty">
+                <ImageView
+                    android:id="@+id/activity_search_address_image_end"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/search_icon_end"
+                    android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/activity_search_address_edit_end"
+                    android:background="@drawable/activity_search_address_edit_background"
+                    android:layout_marginLeft="@dimen/activity_height_twenty_one"
+                    android:layout_toRightOf="@+id/activity_search_address_image_end"
+                    android:textColorHint="@color/colorGrayText"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:hint="@string/end"
+                    android:textColor="@color/colorBlackFour"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/activity_search_address_image_go"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/activity_search_address_image_back"
+            android:background="@color/colorLucency"
+            android:layout_marginLeft="@dimen/activity_height_fifteen"
+            android:layout_marginRight="@dimen/activity_height_twenty_one"
+            android:layout_width="@dimen/activity_height_forty"
+            android:layout_height="@dimen/activity_height_forty" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/activity_Search_address_listview"
+        android:layout_marginTop="@dimen/activity_height_ten"
+        android:background="@color/colorWhiteness"
+        android:divider="@color/colorLine"
+        android:visibility="gone"
+        android:dividerHeight="@dimen/activity_height_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

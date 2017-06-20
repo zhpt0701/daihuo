@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhiteness"
+        android:layout_height="@dimen/activity_height_forty">
+        <Button
+            android:id="@+id/fragment_route_btn_menu"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/nav_icon_user"
+            android:gravity="center"
+            android:background="@color/colorLucency"
+            android:paddingLeft="@dimen/activity_number_twenty_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_weight="9"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+                android:textColor="@color/colorBlackTwo"
+                android:text="@string/layout_menu_route"
+                android:background="@color/colorLucency"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/activity_height_seventeen"
+                android:layout_width="@dimen/activity_height_fifty_three"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <Button
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/activity_number_thirty_two"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/fragment_route_radiogroup"
+        android:background="@color/colorWhiteness"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/activity_height_fifty">
+        <RadioButton
+            android:id="@+id/fragment_route_radiobutton_going"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:text="@string/fragment_route_going"
+            android:textColor="@color/fragment_route_radiobtn_background"
+            android:background="@drawable/fragment_route_radiobutton_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/fragment_route_radiobutton_fished"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/fragment_route_radiobtn_background"
+            android:background="@drawable/fragment_route_radiobutton_background"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:text="@string/fragment_route_fished"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/fragment_route_radiobtn_background"
+            android:background="@drawable/fragment_route_radiobutton_background"
+            android:text="@string/fragment_route_cancelled"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_route_radiobutton_cancelled" />
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.xl.foursling.view.xlist.XListView
+            android:id="@+id/fragment_route_xlist"
+            android:divider="@color/colorLine"
+            android:dividerHeight="@dimen/activity_height_ten"
+            android:layout_marginTop="@dimen/activity_height_ten"
+            android:layout_marginLeft="@dimen/activity_height_ten"
+            android:layout_marginRight="@dimen/activity_height_ten"
+            android:listSelector="@color/colorLucency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.xl.foursling.view.xlist.XListView>
+        <include layout="@layout/loading"/>
+        <include layout="@layout/not_data_layout"/>
+    </FrameLayout>
+</LinearLayout>

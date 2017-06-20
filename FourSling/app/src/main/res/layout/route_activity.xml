@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorWhiteness"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/route_activity_title"
+        android:orientation="horizontal"
+        android:background="@color/colorWhiteness"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_height_fifty">
+        <Button
+            android:id="@+id/route_activity_back"
+            android:drawableLeft="@mipmap/nav_icon_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_height_fifteen"
+            android:background="@color/colorLucency"
+            android:layout_width="@dimen/slidingmenu_offset"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/route_activity_popup"
+            android:layout_weight="1"
+            android:src="@mipmap/details_icon_drop"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/route_activity_map"
+            android:background="@color/colorLucency"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/activity_height_fifteen"
+            android:drawableRight="@mipmap/details_icon_cursor"
+            android:layout_width="@dimen/slidingmenu_offset"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/route_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.amap.api.maps2d.MapView>
+</LinearLayout>

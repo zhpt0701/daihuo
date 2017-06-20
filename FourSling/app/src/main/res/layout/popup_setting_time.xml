@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/popup_setting_setting_btn_five"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="每5秒提醒一次"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_setting_setting_btn_ten"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="每10秒提醒一次"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_setting_setting_btn_fifteen"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="每15秒提醒一次"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_setting_setting_btn_on"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="关闭提醒"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+    <Button
+        android:id="@+id/popup_setting_setting_btn_cancel"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorRedTwo"
+        android:text="@string/cancel"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:background="@drawable/edittext_landing_pass_background"
+        android:layout_height="@dimen/activity_height_fifty" />
+</LinearLayout>

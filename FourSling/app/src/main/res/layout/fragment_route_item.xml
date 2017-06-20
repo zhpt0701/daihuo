@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/fragment_roder_item_background"
+    android:paddingBottom="@dimen/activity_height_thirteen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_height_eighteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/fragment_route_text_time"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:textColor="@color/colorBlackTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/fragment_route_imagebtn"
+            android:layout_marginRight="@dimen/activity_number_nineteen"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/journey_icon_cancel"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_height_three"
+        android:layout_marginRight="@dimen/activity_height_three"
+        android:layout_height="@dimen/activity_number_seventy_one">
+        <TextView
+            android:id="@+id/fragment_route_item_line_one"
+            android:layout_marginTop="@dimen/activity_height_fifteen"
+            android:layout_marginLeft="@dimen/Activity_height_thirty_five"
+            android:layout_marginRight="@dimen/Activity_height_thirty_five"
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="@dimen/activity_height_one" />
+        <TextView
+            android:id="@+id/fragment_route_text_start"
+            android:layout_toLeftOf="@+id/fragment_route_orientation"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_height_forty"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_height_eighteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_route_text_start_con"
+            android:layout_below="@+id/fragment_route_text_start"
+            android:layout_toLeftOf="@+id/fragment_route_orientation"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_height_twenty"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/fragment_route_orientation"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorLucency"
+            android:src="@mipmap/order_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_route_text_end"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlackFour"
+            android:layout_marginLeft="@dimen/activity_height_forty"
+            android:textSize="@dimen/activity_height_eighteen"
+            android:layout_toRightOf="@+id/fragment_route_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fragment_route_text_end_con"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/fragment_route_text_end"
+            android:textColor="@color/colorBlackFour"
+            android:layout_marginLeft="@dimen/activity_height_twenty"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:layout_toRightOf="@+id/fragment_route_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+    android:id="@+id/fragment_route_item_line"
+    android:layout_marginLeft="@dimen/Activity_height_thirty_five"
+    android:layout_marginRight="@dimen/Activity_height_thirty_five"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorLine"
+    android:layout_height="@dimen/activity_height_one" />
+    <FrameLayout
+        android:id="@+id/fragment_route_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="@dimen/Activity_height_thirty_five"
+            android:layout_marginRight="@dimen/Activity_height_thirty_five"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorRouteItem"
+            android:layout_height="@dimen/activity_height_one" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/Activity_height_thirty_five"
+            android:layout_marginRight="@dimen/Activity_height_thirty_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="2"
+                android:paddingTop="@dimen/activity_height_twenty_four"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fragment_route_image_jd"
+                    android:src="@drawable/fragment_route_imageview_back"
+                    android:background="@color/colorWhiteness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/fragment_route_text_jd"
+                    android:text="已接单"
+                    android:textColor="@color/fragment_route_item_textcolor"
+                    android:textSize="@dimen/activity_height_eleven"
+                    android:layout_marginTop="@dimen/activity_number_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:paddingTop="@dimen/activity_height_twenty_four"
+                android:paddingLeft="@dimen/activity_height_fifteen"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fragment_route_image_q"
+                    android:src="@drawable/fragment_route_imageview_back"
+                    android:background="@color/colorWhiteness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/fragment_route_text_q"
+                    android:text="已取单"
+                    android:textColor="@color/fragment_route_item_textcolor"
+                    android:textSize="@dimen/activity_height_eleven"
+                    android:layout_marginTop="@dimen/activity_number_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:paddingTop="@dimen/activity_height_twenty_four"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fragment_route_image_yh"
+                    android:src="@drawable/fragment_route_imageview_back"
+                    android:background="@color/colorWhiteness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/fragment_route_text_yh"
+                    android:text="运输在途"
+                    android:textColor="@color/fragment_route_item_textcolor"
+                    android:textSize="@dimen/activity_height_eleven"
+                    android:layout_marginTop="@dimen/activity_number_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:paddingTop="@dimen/activity_height_twenty_four"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fragment_route_image_dh"
+                    android:src="@drawable/fragment_route_imageview_back"
+                    android:background="@color/colorWhiteness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/fragment_route_text_dh"
+                    android:text="带货成功"
+                    android:textColor="@color/fragment_route_item_textcolor"
+                    android:textSize="@dimen/activity_height_eleven"
+                    android:layout_marginTop="@dimen/activity_number_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

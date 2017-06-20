@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorLine"
+        android:orientation="vertical"
+        android:layout_height="@dimen/activity_number_two_hundred_eighty_two">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_height_fifty">
+            <Button
+                android:id="@+id/popup_user_btn_cancel"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/colorRedTwo"
+                android:text="@string/cancel"
+                android:paddingLeft="@dimen/activity_height_twelve"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:background="@drawable/edittext_landing_pass_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/popup_user_btn_ok"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/colorRedTwo"
+                android:text="@string/register_textview_ok"
+                android:paddingRight="@dimen/activity_height_twelve"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:background="@drawable/edittext_landing_pass_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.xl.foursling.view.roller.WheelView
+                android:id="@+id/popup_user_wheelview_province"
+                android:layout_weight="1"
+                android:background="@color/colorLine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <com.example.xl.foursling.view.roller.WheelView
+                android:id="@+id/popup_user_wheelview_city"
+                android:layout_weight="1"
+                android:background="@color/colorLine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <com.example.xl.foursling.view.roller.WheelView
+                android:id="@+id/popup_user_wheelview_district"
+                android:layout_weight="1"
+                android:background="@color/colorLine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

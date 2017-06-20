@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/colorLine"/>
+            <corners android:bottomLeftRadius="@dimen/activity_height_fifteen"
+                android:bottomRightRadius="@dimen/activity_height_fifteen"
+                />
+        </shape>
+    </item>
+    <item android:top="@dimen/activity_height_one">
+        <shape>
+            <solid android:color="@color/colorWhiteness"/>
+            <corners android:bottomLeftRadius="@dimen/activity_height_fifteen"
+                android:bottomRightRadius="@dimen/activity_height_fifteen"
+                />
+        </shape>
+    </item>
+</layer-list>

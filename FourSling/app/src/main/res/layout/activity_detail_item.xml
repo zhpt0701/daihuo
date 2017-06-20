@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWhiteness"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/activity_height_ten"
+    android:paddingBottom="@dimen/activity_height_ten"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_height_twenty_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/activity_detail_item_textview_title"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_detail_item_textview_time"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/activity_height_twelve"
+            android:textColor="@color/colorGrayText"
+            android:layout_marginTop="@dimen/activity_height_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/activity_detail_item_textview_money"
+        android:layout_marginRight="@dimen/activity_height_twenty_one"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

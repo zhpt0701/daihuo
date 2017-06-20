@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhiteness"
+        android:layout_height="@dimen/activity_height_forty">
+        <Button
+            android:id="@+id/fragment_message_btn_menu"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/nav_icon_user"
+            android:gravity="center"
+            android:background="@color/colorLucency"
+            android:paddingLeft="@dimen/activity_number_twenty_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_weight="9"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+                android:textColor="@color/colorBlackTwo"
+                android:text="@string/fragment_message"
+                android:background="@color/colorLucency"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/activity_height_seventeen"
+                android:layout_width="@dimen/activity_height_fifty_three"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <Button
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/activity_number_thirty_two"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_marginTop="@dimen/activity_height_five"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_height_sixty_eight">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/fragment_message_btn_jd"
+                        android:drawableLeft="@mipmap/message_icon_order"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:drawablePadding="@dimen/activity_height_twenty_five"
+                        android:textColor="@color/colorBlackFour"
+                        android:text="@string/fragment_message_jd"
+                        android:gravity="left|center_vertical"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:background="@drawable/edittext_landing_pass_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/fragment_message_textview_jd"
+                    android:layout_marginTop="@dimen/activity_height_fifteen"
+                    android:layout_marginLeft="@dimen/activity_height_sixty"
+                    android:visibility="gone"
+                    android:background="@drawable/layout_menu_textveiw_message_background"
+                    android:layout_width="@dimen/activity_number_six"
+                    android:layout_height="@dimen/activity_number_six" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_height_sixty_eight">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/fragment_message_btn_money"
+                        android:drawableLeft="@mipmap/message_icon_wallet"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:drawablePadding="@dimen/activity_height_twenty_five"
+                        android:textColor="@color/colorBlackFour"
+                        android:text="@string/fragment_message_money"
+                        android:gravity="left|center_vertical"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:background="@drawable/edittext_landing_pass_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/fragment_message_textview_money"
+                    android:layout_marginTop="@dimen/activity_height_fifteen"
+                    android:layout_marginLeft="@dimen/activity_height_sixty"
+                    android:visibility="gone"
+                    android:background="@drawable/layout_menu_textveiw_message_background"
+                    android:layout_width="@dimen/activity_number_six"
+                    android:layout_height="@dimen/activity_number_six" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_height_sixty_eight">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/fragment_message_btn_xt"
+                        android:drawableLeft="@mipmap/message_icon_chat"
+                        android:paddingLeft="@dimen/activity_height_twenty_one"
+                        android:drawablePadding="@dimen/activity_height_twenty_five"
+                        android:textColor="@color/colorBlackFour"
+                        android:text="@string/fragment_message_xt"
+                        android:gravity="left|center_vertical"
+                        android:textSize="@dimen/activity_height_fifteen"
+                        android:background="@drawable/edittext_landing_pass_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/fragment_message_textview_xt"
+                    android:layout_marginTop="@dimen/activity_height_fifteen"
+                    android:layout_marginLeft="@dimen/activity_height_sixty"
+                    android:visibility="gone"
+                    android:background="@drawable/layout_menu_textveiw_message_background"
+                    android:layout_width="@dimen/activity_number_six"
+                    android:layout_height="@dimen/activity_number_six" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

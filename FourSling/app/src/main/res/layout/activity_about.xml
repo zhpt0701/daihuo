@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <ImageView
+        android:layout_marginTop="@dimen/activity_height_fifty"
+        android:src="@mipmap/ic_foursling"
+        android:layout_width="@dimen/activity_height_eighty"
+        android:layout_height="@dimen/activity_height_eighty" />
+    <TextView
+        android:id="@+id/activity_about_text_version"
+        android:layout_marginTop="@dimen/activity_height_ten"
+        android:textColor="@color/colorBlackFour"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/activity_about_update"
+        android:textColor="@color/colorBlackFour"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="@dimen/activity_height_twenty"
+        android:text="@string/update"
+        android:paddingLeft="@dimen/activity_height_twenty_one"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:drawableRight="@mipmap/icon_arrow_common"
+        android:paddingRight="@dimen/activity_height_twenty_one"
+        android:background="@drawable/fragment_user_enter_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_number_fifty_five" />
+    <Button
+        android:id="@+id/activity_about_function"
+        android:textColor="@color/colorBlackFour"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="@dimen/activity_height_one"
+        android:text="@string/function"
+        android:paddingLeft="@dimen/activity_height_twenty_one"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:drawableRight="@mipmap/icon_arrow_common"
+        android:paddingRight="@dimen/activity_height_twenty_one"
+        android:background="@drawable/fragment_user_enter_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_number_fifty_five" />
+    <Button
+        android:id="@+id/activity_about_agreement"
+        android:textColor="@color/colorBlackFour"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="@dimen/activity_height_one"
+        android:text="@string/user_agreement"
+        android:paddingLeft="@dimen/activity_height_twenty_one"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:drawableRight="@mipmap/icon_arrow_common"
+        android:paddingRight="@dimen/activity_height_twenty_one"
+        android:background="@drawable/fragment_user_enter_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_number_fifty_five" />
+    <Button
+        android:id="@+id/activity_about_tickling"
+        android:textColor="@color/colorBlackFour"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="@dimen/activity_height_one"
+        android:text="@string/tickling"
+        android:paddingLeft="@dimen/activity_height_twenty_one"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:drawableRight="@mipmap/icon_arrow_common"
+        android:paddingRight="@dimen/activity_height_twenty_one"
+        android:background="@drawable/fragment_user_enter_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_number_fifty_five" />
+    <Button
+        android:id="@+id/activity_about_phone"
+        android:textColor="@color/colorBlackFour"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="@dimen/activity_height_one"
+        android:text="@string/service_hot"
+        android:paddingLeft="@dimen/activity_height_twenty_one"
+        android:textSize="@dimen/activity_height_fifteen"
+        android:drawableRight="@mipmap/icon_arrow_common"
+        android:paddingRight="@dimen/activity_height_twenty_one"
+        android:background="@drawable/fragment_user_enter_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_number_fifty_five" />
+</LinearLayout>

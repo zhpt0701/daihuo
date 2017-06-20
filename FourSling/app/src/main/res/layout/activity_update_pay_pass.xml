@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:background="@color/colorWhiteness"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/activity_update_pay_pass_btn_jd"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:gravity="left|center_vertical"
+                    android:text="记得原支付密码"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment_user_enter_btn_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_number_fifty_five" />
+                <ImageView
+                    android:layout_marginRight="@dimen/activity_height_twenty_one"
+                    android:src="@mipmap/icon_arrow_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:background="@color/colorWhiteness"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/activity_update_pau_pass_btn_wj"
+                    android:paddingLeft="@dimen/activity_height_twenty_one"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:gravity="left|center_vertical"
+                    android:text="忘记原支付密码"
+                    android:background="@drawable/fragment_user_enter_btn_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_number_fifty_five" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/activity_height_twenty_one"
+                    android:src="@mipmap/icon_arrow_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+
+</LinearLayout>

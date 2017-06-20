@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="@dimen/activity_height_sixty"
+                android:src="@mipmap/login_title"
+                android:layout_width="@dimen/activity_with_one_hundred_fifty_four"
+                android:layout_height="@dimen/activity_height_twenty_five" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_height_fifty_nine"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlackOne"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:text="@string/landing_textView_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_landing_register"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/activity_height_fifteen"
+                    android:textColor="@color/colorRad"
+                    android:text="@string/landing_button_register"
+                    android:background="@color/colorLucency"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/editText_landing_phone_number"
+                android:layout_marginTop="@dimen/activity_height_fifty_three"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:hint="@string/landing_editText_phone_number"
+                android:textColor="@color/colorBlackFour"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/activity_height_twelve"
+                android:phoneNumber="true"
+                android:textColorHint="@color/colorGrayText"
+                android:background="@drawable/edittext_landing_phone_background"
+                android:layout_height="@dimen/activity_height_sixty" />
+            <EditText
+                android:id="@+id/editText_landing_pass"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:hint="@string/landing_editTExt_password"
+                android:textColor="@color/colorBlackFour"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:paddingLeft="@dimen/activity_height_twelve"
+                android:password="true"
+                android:textColorHint="@color/colorGrayText"
+                android:digits="@string/password"
+                android:maxLength="16"
+                android:background="@drawable/edittext_landing_pass_background"
+                android:layout_height="@dimen/activity_height_sixty" />
+            <Button
+                android:id="@+id/btn_landing_not_pass"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorBlackOne"
+                android:background="@color/colorLucency"
+                android:text="@string/landing_button_not_password"
+                android:layout_marginTop="@dimen/activity_height_sixty_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+            <Button
+                android:id="@+id/btn_landing"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorWhiteness"
+                android:gravity="center"
+                android:background="@color/colorRad"
+                android:text="@string/landing_button_landing"
+                android:layout_height="@dimen/activity_height_forty_four" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

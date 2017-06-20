@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:id="@+id/activity_pay_radioGroup"
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/activity_pay_radioButton_WX"
+                    android:layout_width="match_parent"
+                    android:button="@null"
+                    android:visibility="gone"
+                    android:drawableLeft="@mipmap/wallet_logo_weixin"
+                    android:text="@string/activity_pay_wx"
+                    android:paddingRight="@dimen/activity_height_fifteen"
+                    android:drawableRight="@drawable/activity_pay_radiobutton_backgroud"
+                    android:paddingLeft="@dimen/activity_height_fifteen"
+                    android:drawablePadding="@dimen/activity_height_thirteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:textSize="@dimen/activity_number_sixteen"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_number_seventy" />
+                <RadioButton
+                    android:id="@+id/activity_pay_radioButton_alipay"
+                    android:layout_width="match_parent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/activity_height_one"
+                    android:paddingRight="@dimen/activity_height_fifteen"
+                    android:drawableRight="@drawable/activity_pay_radiobutton_backgroud"
+                    android:drawableLeft="@mipmap/wallet_logo_alipay"
+                    android:paddingLeft="@dimen/activity_height_fifteen"
+                    android:drawablePadding="@dimen/activity_height_thirteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:text="@string/activity_pay_aliapy"
+                    android:textSize="@dimen/activity_number_sixteen"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorWhiteness"
+                    android:layout_height="@dimen/activity_number_seventy" />
+            </RadioGroup>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:layout_width="match_parent"
+                android:background="@color/colorWhiteness"
+                android:layout_height="@dimen/activity_number_seventy">
+                <TextView
+                    android:id="@+id/activity_pay_textview_content"
+                    android:textSize="@dimen/activity_number_sixteen"
+                    android:textColor="@color/colorBlackFour"
+                    android:layout_marginLeft="@dimen/activity_height_fifteen"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_pay_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/activity_pay_ed_input"
+                    android:layout_marginLeft="@dimen/activity_height_fifteen"
+                    android:layout_marginRight="@dimen/activity_height_fifteen"
+                    android:layout_toRightOf="@+id/activity_pay_textview_content"
+                    android:textColor="@color/colorBlackFour"
+                    android:textSize="@dimen/activity_number_sixteen"
+                    android:textColorHint="@color/colorGrayText"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/activity_pay_ed_cotent"
+                    android:background="@color/colorLucency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/activity_pay_btn_submit"
+                android:layout_marginTop="@dimen/activity_height_fifty"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@color/activity_pay_btn_color"
+                android:layout_marginLeft="@dimen/activity_height_fifteen"
+                android:layout_marginRight="@dimen/activity_height_fifteen"
+                android:background="@drawable/activity_pay_btn_background"
+                android:layout_height="@dimen/activity_height_fifty" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

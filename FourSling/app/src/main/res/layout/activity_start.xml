@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RadioGroup
+            android:id="@+id/activity_start_radiogroup"
+            android:background="@color/colorLucency"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_height_sixty"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/activity_start_radiobtn_one"
+                android:background="@drawable/activity_start_radiobtn_one_back"
+                android:button="@null"
+                android:checked="true"
+                android:layout_width="@dimen/activity_height_ten"
+                android:layout_height="@dimen/activity_height_ten" />
+            <RadioButton
+                android:id="@+id/activity_start_radiobtn_two"
+                android:background="@drawable/activity_start_radiobtn_one_back"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/activity_height_thirteen"
+                android:layout_width="@dimen/activity_height_ten"
+                android:layout_height="@dimen/activity_height_ten" />
+            <RadioButton
+                android:id="@+id/activity_start_radiobtn_three"
+                android:background="@drawable/activity_start_radiobtn_one_back"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/activity_height_thirteen"
+                android:layout_width="@dimen/activity_height_ten"
+                android:layout_height="@dimen/activity_height_ten" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/activity_start_textView"
+            android:visibility="gone"
+            android:background="@mipmap/foursling_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

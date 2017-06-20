@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorLine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/popup_roder_dateil_relativelayout_one"
+        android:background="@color/colorWhiteness"
+        android:paddingBottom="@dimen/activity_height_fifty"
+        android:paddingTop="@dimen/activity_height_twenty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/popup_roder_dateil_relativelayout"
+            android:background="@color/colorWhiteness"
+            android:layout_marginLeft="@dimen/activity_height_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/popup_roder_dateil_image_one"
+                android:src="@drawable/popup_roder_detail_src"
+                android:background="@color/colorLucency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/popup_roder_dateil_image_one"
+                android:id="@+id/popup_roder_dateil_text_one"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/popup_roder_dateil_text"
+                android:layout_width="@dimen/activity_height_two"
+                android:layout_height="@dimen/slidingmenu_offset" />
+            <ImageView
+                android:layout_below="@+id/popup_roder_dateil_text_one"
+                android:id="@+id/popup_roder_dateil_image_two"
+                android:src="@drawable/popup_roder_detail_src"
+                android:background="@color/colorLucency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/popup_roder_dateil_image_two"
+                android:id="@+id/popup_roder_dateil_text_two"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/popup_roder_dateil_text"
+                android:layout_width="@dimen/activity_height_two"
+                android:layout_height="@dimen/slidingmenu_offset" />
+            <ImageView
+                android:layout_below="@+id/popup_roder_dateil_text_two"
+                android:id="@+id/popup_roder_dateil_image_three"
+                android:src="@drawable/popup_roder_detail_src"
+                android:background="@color/colorLucency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/popup_roder_dateil_start"
+            android:layout_marginLeft="@dimen/activity_height_fifteen"
+            android:layout_toRightOf="@+id/popup_roder_dateil_relativelayout"
+            android:textSize="@dimen/activity_height_fifteen"
+            android:textColor="@color/colorBlackFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/popup_roder_dateil_text_long"
+            android:layout_marginTop="@dimen/activity_number_fourteen"
+            android:layout_marginLeft="@dimen/activity_height_fifteen"
+            android:layout_below="@+id/popup_roder_dateil_start"
+            android:layout_toRightOf="@+id/popup_roder_dateil_relativelayout"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:textColor="@color/colorGrayTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/popup_roder_dateil_line_start"
+            android:layout_marginLeft="@dimen/activity_height_fifteen"
+            android:layout_below="@+id/popup_roder_dateil_text_long"
+            android:layout_toRightOf="@+id/popup_roder_dateil_relativelayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/popup_roder_dateil_text_start"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorGrayTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/popup_roder_dateil_text_address"
+                android:layout_marginTop="@dimen/activity_number_eight"
+                android:textSize="@dimen/activity_height_thirteen"
+                android:textColor="@color/colorGrayTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/popup_roder_dateil_line_end"
+            android:layout_marginTop="@dimen/activity_height_fifty"
+            android:layout_marginLeft="@dimen/activity_height_fifteen"
+            android:layout_below="@+id/popup_roder_dateil_line_start"
+            android:layout_toRightOf="@+id/popup_roder_dateil_relativelayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/popup_roder_dateil_text_end"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorGrayTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/popup_roder_dateil_text_end_address"
+                android:layout_marginTop="@dimen/activity_number_eight"
+                android:textSize="@dimen/activity_height_thirteen"
+                android:textColor="@color/colorGrayTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/popup_roder_dateil_imagebtn_one"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_height_twenty"
+            android:layout_marginTop="@dimen/footer_height"
+            android:src="@mipmap/details_icon_call"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/popup_roder_dateil_imagebtn_two"
+            android:layout_marginRight="@dimen/activity_height_twenty"
+            android:layout_below="@+id/popup_roder_dateil_imagebtn_one"
+            android:layout_marginTop="@dimen/activity_height_eighty"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/details_icon_call"
+            android:background="@color/colorLucency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/popup_roder_dateil_relativelayout_one"
+        android:layout_marginTop="@dimen/activity_height_ten"
+        android:background="@color/colorWhiteness"
+        android:paddingTop="@dimen/activity_height_fifteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/popup_roder_dateil_text_dd"
+            android:layout_marginLeft="@dimen/activity_height_twenty"
+            android:layout_marginTop="@dimen/activity_number_eight"
+            android:textColor="@color/colorTextMap"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/popup_roder_dateil_text_yf"
+            android:layout_marginTop="@dimen/activity_number_eight"
+            android:layout_below="@+id/popup_roder_dateil_text_dd"
+            android:layout_marginLeft="@dimen/activity_height_twenty"
+            android:textColor="@color/colorTextMap"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/popup_roder_dateil_text_time"
+            android:layout_marginLeft="@dimen/activity_height_twenty"
+            android:layout_marginTop="@dimen/activity_number_eight"
+            android:layout_below="@+id/popup_roder_dateil_text_yf"
+            android:textColor="@color/colorTextMap"
+            android:textSize="@dimen/activity_height_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/popup_roder_dateil_imagebtn_over"
+            android:layout_marginTop="@dimen/activity_height_twenty"
+            android:layout_below="@+id/popup_roder_dateil_text_time"
+            android:background="@color/colorLucency"
+            android:src="@mipmap/details_icon_drop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_height_forty" />
+    </RelativeLayout>
+</RelativeLayout>

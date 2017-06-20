@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relativerlyout_title"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhiteness"
+        android:layout_height="@dimen/activity_height_forty">
+        <Button
+            android:id="@+id/layout_title_back"
+            android:drawableLeft="@mipmap/nav_icon_arrow"
+            android:gravity="center_vertical|left"
+            android:background="@color/colorLucency"
+            android:paddingLeft="@dimen/activity_height_fifteen"
+            android:layout_width="@dimen/slidingmenu_offset"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/layout_title_textview"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlackFour"
+            android:background="@color/colorLucency"
+            android:textSize="@dimen/activity_height_seventeen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/layout_title_btn"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/activity_height_fifteen"
+            android:textColor="@color/colorBlackFour"
+            android:textSize="@dimen/activity_number_fourteen"
+            android:background="@color/colorLucency"
+            android:layout_width="@dimen/slidingmenu_offset"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

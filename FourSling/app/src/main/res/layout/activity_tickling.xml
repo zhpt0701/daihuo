@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/activity_tickling_edittext_content"
+                android:layout_marginTop="@dimen/activity_height_one"
+                android:layout_width="match_parent"
+                android:hint="@string/content"
+                android:gravity="top"
+                android:textColor="@color/colorBlackFour"
+                android:textColorHint="@color/colorGrayText"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:paddingLeft="@dimen/activity_height_fifteen"
+                android:paddingRight="@dimen/activity_height_fifteen"
+                android:paddingTop="@dimen/activity_height_ten"
+                android:paddingBottom="@dimen/activity_height_ten"
+                android:background="@drawable/edittext_this_back"
+                android:layout_height="@dimen/activity_with_one_hundred_fifty_four" />
+            <EditText
+                android:id="@+id/activity_tickling_edittext_phone"
+                android:layout_marginTop="@dimen/activity_height_ten"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlackFour"
+                android:textColorHint="@color/colorGrayText"
+                android:hint="@string/input"
+                android:singleLine="true"
+                android:digits="@string/alipay"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/activity_height_fifteen"
+                android:paddingRight="@dimen/activity_height_fifteen"
+                android:background="@drawable/edittext_this_back"
+                android:layout_height="@dimen/activity_height_fifty" />
+            <Button
+                android:id="@+id/activity_tickling_btn_submit"
+                android:background="@drawable/activity_pay_btn_background"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/activity_height_fifteen"
+                android:textColor="@color/colorWhiteness"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:layout_marginTop="@dimen/activity_height_forty"
+                android:layout_marginLeft="@dimen/activity_height_twenty"
+                android:layout_marginRight="@dimen/activity_height_twenty"
+                android:layout_height="@dimen/activity_height_fifty" />
+        </LinearLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>
